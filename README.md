@@ -1,1 +1,2 @@
 # JavaScript-Course
+这个仓库用于保存学习JavaScript过程中写的那些作业
