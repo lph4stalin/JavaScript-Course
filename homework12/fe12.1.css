@@ -1,0 +1,63 @@
+    .gua-hide {
+        display: none;
+    }
+    .gua-menu-content {
+        height: 100px;
+        border: 1px solid red;
+    }
+    .gua-item {
+        /*display: inline-block;*/
+        /*opacity: 0.6;*/
+        filter: grayscale(100%)
+    }
+    .gua-item.gua-highlight {
+        filter: initial;
+        /*opacity: 1;*/
+    }
+    .gua-item.gua-highlight img {
+        width: 150px;
+        height: 150px;
+    }
+    img {
+        /* transition 这个 css 指定了某个属性发生变化的时候自动使用动画效果和动画时间 */
+        transition: width 1s, height 1s;
+    }
+    .gua-item img {
+        width: 100px;
+        height: 100px
+    }
+
+    /* 3， 轮播图*/
+    .gua-slide {
+        position: relative;
+    }
+    .gua-slide-image {
+        display: none;
+    }
+    /*.gua-slide-image*/
+    .gua-active {
+        display: inline-block;;
+    }
+    .gua-slide-button {
+        right: 0;
+        height: 50px;
+    }
+    .gua-vertical-center {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .gua-slide-indicators {
+        position: absolute;
+        bottom: 10px;
+    }
+    .gua-slide-indi {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: red;
+    }
+    .gua-white {
+        background: white;
+    }
