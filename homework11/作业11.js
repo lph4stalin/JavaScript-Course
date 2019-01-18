@@ -31,3 +31,11 @@
 // GET
 // http://vip.cocode.cc:3000/todo/<你的qq号>/delete/<todo_id>
 //
+
+const ajax = function(method, url, data) {
+    request = new XMLHttpRequest()
+    request.open(method, url, true)
+    request.setRequestHeader("Content-Type", "application/json")
+    data = JSON.stringify(data)
+    request.send(data)
+}
